@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Kamso Pro - Layanan Terpercaya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-wrench"></i>
+                    <span>Bengkel Kamso Pro</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Beranda</a></li>
+                        <li><a href="#services" class="nav-link">Layanan</a></li>
+                        <li><a href="#emergency" class="nav-link">Darurat</a></li>
+                        <li><a href="#booking" class="nav-link">Booking</a></li>
+                        <li><a href="#tracking" class="nav-link">Tracking</a></li>
+                        <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span>089-538-629-4546</span>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bengkel Mobil Terpercaya</h1>
+                <p class="hero-subtitle">Layanan servis berkualitas dengan teknisi berpengalaman. Siap melayani 24/7 untuk kebutuhan darurat Anda.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Booking Sekarang</a>
+                    <a href="#emergency" class="btn btn-secondary">Panggil Montir Darurat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section id="emergency" class="emergency-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Layanan Montir Panggilan Darurat</h2>
+                <p class="section-subtitle">Mobil mogok di jalan? Hubungi kami sekarang! Montir kami siap datang ke lokasi Anda dalam waktu singkat.</p>
+            </div>
+            
+            <div class="emergency-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>🚗 Layanan 24/7</h3>
+                    <p>Siap melayani kapan saja, di mana saja</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>⚡ Respon Cepat</h3>
+                    <p>Montir tiba dalam 30-60 menit</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>🔧 Teknisi Ahli</h3>
+                    <p>Berpengalaman menangani semua jenis mobil</p>
+                </div>
+            </div>
+
+            <div class="emergency-form-container">
+                <form id="emergencyForm" class="emergency-form">
+                    <h3>Form Panggilan Darurat</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emergencyName">Nama Lengkap</label>
+                            <input type="text" id="emergencyName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencyPhone">Nomor Telepon</label>
+                            <input type="tel" id="emergencyPhone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyLocation">Lokasi Lengkap</label>
+                        <textarea id="emergencyLocation" name="location" rows="3" required placeholder="Contoh: Jl. Tlogosari (dekat kontrakan Racing )"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyProblem">Masalah Kendaraan</label>
+                        <select id="emergencyProblem" name="problem" required>
+                            <option value="">Pilih masalah kendaraan</option>
+                            <option value="mogok">Mobil Mogok</option>
+                            <option value="ban-bocor">Ban Bocor</option>
+                            <option value="aki-soak">Aki Soak</option>
+                            <option value="overheat">Mesin Overheat</option>
+                            <option value="kecelakaan">Kecelakaan Ringan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyDescription">Deskripsi Detail (Opsional)</label>
+                        <textarea id="emergencyDescription" name="description" rows="3" placeholder="Jelaskan kondisi kendaraan secara detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-emergency">
+                        <span class="btn-text">Kirim Panggilan Darurat</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Mengirim...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Layanan Reguler</h2>
+                <p class="section-subtitle">Berbagai layanan perawatan dan perbaikan mobil dengan harga terjangkau</p>
+            </div>
+            
+            <div id="servicesList" class="services-grid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Booking Layanan Reguler</h2>
+                <p class="section-subtitle">Jadwalkan servis mobil Anda dengan mudah</p>
+            </div>
+            
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName">Nama Lengkap</label>
+                            <input type="text" id="bookingName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingPhone">Nomor Telepon</label>
+                            <input type="tel" id="bookingPhone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingEmail">Email</label>
+                            <input type="email" id="bookingEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingDate">Tanggal Booking</label>
+                            <input type="date" id="bookingDate" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingService">Pilih Layanan</label>
+                            <select id="bookingService" name="service" required>
+                                <option value="">Pilih layanan</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingTime">Waktu Preferensi</label>
+                            <select id="bookingTime" name="time" required>
+                                <option value="">Pilih waktu</option>
+                                <option value="08:00">08:00 - 10:00</option>
+                                <option value="10:00">10:00 - 12:00</option>
+                                <option value="13:00">13:00 - 15:00</option>
+                                <option value="15:00">15:00 - 17:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicleBrand">Merk Kendaraan</label>
+                            <input type="text" id="vehicleBrand" name="vehicleBrand" required placeholder="Contoh: Toyota">
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleModel">Model/Tipe</label>
+                            <input type="text" id="vehicleModel" name="vehicleModel" required placeholder="Contoh: Avanza">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicleYear">Tahun Kendaraan</label>
+                        <input type="number" id="vehicleYear" name="vehicleYear" min="1990" max="2025" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingNotes">Catatan Tambahan (Opsional)</label>
+                        <textarea id="bookingNotes" name="notes" rows="3" placeholder="Jelaskan kondisi kendaraan atau permintaan khusus..."></textarea>
+                    </div>
+                    
+                    <!-- Price Display -->
+                    <div id="priceDisplay" class="price-display" style="display: none;">
+                        <div class="price-info">
+                            <span class="price-label">Total Biaya:</span>
+                            <span id="totalPrice" class="price-amount">Rp 0</span>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method Selection -->
+                    <div class="payment-section">
+                        <h4>Metode Pembayaran</h4>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cod" checked>
+                                <span class="payment-label">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    COD (Bayar di Tempat)
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="qris">
+                                <span class="payment-label">
+                                    <i class="fas fa-qrcode"></i>
+                                    QRIS (Transfer Digital)
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-text">Konfirmasi Booking</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Memproses...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lacak Status Layanan</h2>
+                <p class="section-subtitle">Masukkan tracking ID untuk melihat status layanan Anda</p>
+            </div>
+            
+            <div class="tracking-form-container">
+                <form id="trackingForm" class="tracking-form">
+                    <div class="tracking-input-group">
+                        <input type="text" id="trackingId" name="trackingId" placeholder="Masukkan Tracking ID (contoh: BK20241216ABC123)" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Lacak Status</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="trackingResults" class="tracking-results" style="display: none;">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+                
+                <div id="trackingError" class="tracking-error" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Tracking ID tidak ditemukan. Pastikan ID yang Anda masukkan benar.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-wrench"></i>
+                        <span>Bengkel Kamso Pro</span>
+                    </div>
+                    <p>Bengkel terpercaya dengan layanan berkualitas dan teknisi berpengalaman. Melayani semua jenis kendaraan dengan standar profesional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Layanan Kami</h3>
+                    <ul>
+                        <li><a href="#services">Ganti Oli Mesin</a></li>
+                        <li><a href="#services">Servis Rutin</a></li>
+                        <li><a href="#services">Tune Up</a></li>
+                        <li><a href="#services">Service AC Mobil</a></li>
+                        <li><a href="#services">Ban & Velg</a></li>
+                        <li><a href="#services">Service Rem</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>089-538-629-4546</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bengkelkamsopro.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jl. Ismoyo Baru,Jeruklegi,Cilacap</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <div class="schedule-item">
+                        <span>Senin - Jumat</span>
+                        <span>08:00 - 17:00</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span>Sabtu</span>
+                        <span>08:00 - 15:00</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span>Minggu</span>
+                        <span>Tutup</span>
+                    </div>
+                    <div class="schedule-item emergency">
+                        <span>Darurat 24/7</span>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bengkel Kamso Pro. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <div id="whatsappChat" class="whatsapp-chat">
+        <div class="whatsapp-button" id="whatsappButton">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-widget" id="whatsappWidget" style="display: none;">
+            <div class="whatsapp-header">
+                <div class="whatsapp-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="whatsapp-info">
+                    <h4>Bengkel Kamso Pro</h4>
+                    <span>Online</span>
+                </div>
+                <button class="whatsapp-close" id="whatsappClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="whatsapp-body">
+                <div class="whatsapp-message">
+                    <p>Halo! Ada yang bisa kami bantu?</p>
+                </div>
+                <div class="whatsapp-quick-actions">
+                    <button class="quick-action" data-action="emergency">🚨 Panggilan Darurat</button>
+                    <button class="quick-action" data-action="booking">📅 Booking Layanan</button>
+                    <button class="quick-action" data-action="price">💰 Tanya Harga</button>
+                    <button class="quick-action" data-action="tracking">📍 Cek Status</button>
+                </div>
+            </div>
+            <div class="whatsapp-footer">
+                <button class="whatsapp-send-btn" id="whatsappSend">
+                    <i class="fab fa-whatsapp"></i>
+                    Buka WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Berhasil!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p id="successMessage">Permintaan Anda telah berhasil dikirim!</p>
+                <div id="trackingInfo" class="tracking-info" style="display: none;">
+                    <p><strong>Tracking ID:</strong> <span id="generatedTrackingId"></span></p>
+                    <p>Simpan ID ini untuk melacak status layanan Anda.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalOkBtn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="paymentModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pembayaran QRIS</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="qris-container">
+                    <div class="qris-code">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNvbnRvaCBRUklTPC90ZXh0Pgo8L3N2Zz4K" alt="QRIS Code">
+                    </div>
+                    <div class="payment-info">
+                        <p><strong>Total Pembayaran:</strong></p>
+                        <p class="payment-amount" id="paymentAmount">Rp 0</p>
+                        <p class="payment-instruction">Scan QR Code di atas dengan aplikasi mobile banking atau e-wallet Anda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="paymentCancelBtn">Batal</button>
+                <button class="btn btn-primary" id="paymentConfirmBtn">Sudah Bayar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Memproses permintaan...</p>
+        </div>
+    </div>
+
+    <!-- Admin Access Link (Hidden) -->
+    <div class="admin-access" style="position: fixed; bottom: 10px; left: 10px; opacity: 0.15;">
+        <a href="admin.html" style="color: #666; font-size: 12px;">Admin</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

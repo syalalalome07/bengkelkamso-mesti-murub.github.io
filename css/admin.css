@@ -1,0 +1,372 @@
+/* Admin Dashboard Styles */
+.login-screen {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-header .logo-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.login-header h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    min-height: 100vh;
+    background: var(--light-bg);
+}
+
+.admin-header {
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.admin-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.admin-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.menu-btn:hover {
+    background: var(--light-bg);
+}
+
+.menu-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-user {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Admin Main Content */
+.admin-main {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.admin-section {
+    display: none;
+}
+
+.admin-section.active {
+    display: block;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--secondary-color);
+}
+
+.section-header p {
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 40px;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+.stat-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.stat-info p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Tables */
+.services-table,
+.bookings-table,
+.emergency-table {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.services-table table,
+.bookings-table table,
+.emergency-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table th,
+.bookings-table th,
+.emergency-table th,
+.services-table td,
+.bookings-table td,
+.emergency-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.services-table th,
+.bookings-table th,
+.emergency-table th {
+    background: var(--light-bg);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.services-table tr:hover,
+.bookings-table tr:hover,
+.emergency-table tr:hover {
+    background: rgba(255, 107, 53, 0.05);
+}
+
+/* Filter Controls */
+.filter-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-controls select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background: var(--white);
+    font-size: 14px;
+}
+
+/* Recent Activities */
+.recent-activities {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.recent-activities h3 {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.activity-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.activity-item {
+    padding: 15px;
+    border-left: 4px solid var(--primary-color);
+    background: var(--light-bg);
+    margin-bottom: 10px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.activity-item .activity-time {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.activity-item .activity-text {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-btn.edit {
+    background: var(--warning-color);
+    color: var(--text-color);
+}
+
+.action-btn.delete {
+    background: var(--emergency-color);
+    color: var(--white);
+}
+
+.action-btn.status {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.action-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .admin-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .admin-main {
+        padding: 15px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .services-table,
+    .bookings-table,
+    .emergency-table {
+        overflow-x: auto;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .login-container {
+        padding: 30px 20px;
+    }
+}
+
